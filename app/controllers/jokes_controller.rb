@@ -71,4 +71,10 @@ class JokesController < ApplicationController
     def joke_params
       params.require(:joke).permit(:setup, :punchline)
     end
+    
+    def random_joke
+      @joke = Joke.find(params[1])
+      
+    end
+    
 end
