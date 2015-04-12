@@ -10,6 +10,8 @@ class JokesController < ApplicationController
   # GET /jokes/1
   # GET /jokes/1.json
   def show
+    #@joke = Joke.find(1)
+    @joke = Joke.order("random()").first
   end
 
   # GET /jokes/new
