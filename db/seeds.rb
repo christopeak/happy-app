@@ -19,5 +19,6 @@ quotes = Quote.create([
     {text: 'It was the best of times, it was the worst of times', author: 'Charles Dickens'},    
     {text: 'Which one was what one and what one was whose', author: 'Dr. Seuss'},    
     {text: 'These days the world is lit by lightning', author: 'Tennessee Williams'},    
-    {text: 'Do not go gentle into that good night', author: 'Dylan Thomas'},    
+    {text: 'Do not go gentle into that good night', author: 'Dylan Thomas'},
+    {text: 'Evil, pure and simple, from the eight dimension!', author: 'Buckaroo Bonzai'}
 ])
