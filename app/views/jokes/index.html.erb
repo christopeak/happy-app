@@ -5,20 +5,20 @@
 <table>
   <thead>
     <tr>
-      <th>Setup</th>
-      <th>Punchline</th>
-      <th colspan="3"></th>
+      <th>Joke</th>
+      <!--<th>Punchline</th>-->
+      <th colspan="1"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @jokes.each do |joke| %>
       <tr>
-        <td><%= joke.setup %></td>
-        <td><%= joke.punchline %></td>
-        <td><%= link_to 'Show', joke %></td>
-        <td><%= link_to 'Edit', edit_joke_path(joke) %></td>
-        <td><%= link_to 'Destroy', joke, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to joke.setup, edit_joke_path(joke) %></td>
+        <!--<td><%= joke.punchline %></td>-->
+        <!--<td><%= link_to 'Show', joke %></td>-->
+        <!--<td><%= link_to 'Edit', edit_joke_path(joke) %></td>-->
+        <td><%= link_to 'Delete', joke, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
