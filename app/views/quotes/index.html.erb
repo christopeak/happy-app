@@ -14,7 +14,7 @@
   <tbody>
     <% @quotes.each do |quote| %>
       <tr>
-        <td><%= link_to quote.text, edit_quote_path(quote) %></td>
+        <td><%= link_to quote.text, edit_quote_path(quote), class: :blue %></td>
         <!--<td><%= quote.author %></td>-->
         <!--<td><%= link_to 'Show', quote %></td>-->
         <!--<td><%= link_to 'Edit', edit_quote_path(quote) %></td>-->
