@@ -11,6 +11,10 @@ class QuotesController < ApplicationController
   # GET /quotes/1.json
   def show
     @quote = Quote.order("RANDOM()").first
+    respond_to do |format|
+      format.js {}
+      format.html { render :show }
+    end
   end
 
   # GET /quotes/new
