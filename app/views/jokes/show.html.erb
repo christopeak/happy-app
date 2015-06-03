@@ -1,10 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p id="contenttext">
   <%= @joke.setup %>  
-  <div><%= @joke.punchline %>!</div>
+  <div id="punchline"><%= @joke.punchline %>!</div>
 </p>
 
 <%= render "footer" %>
 
-<p><%= link_to "new joke", new_joke_path %></p>
+<p><%= link_to "new joke", new_joke_path, remote: true %></p>

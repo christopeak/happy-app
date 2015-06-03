@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$(document).ready(function() {
+  $(".button_to").on("click", function() {
+    //$("body").prepend($("<div><img src='http://bit.ly/1r7CKxT'/><script>console.log('i runned')</script></div>"));
+    $("#contenttext")[0].textContent = "A quote"
+  })
+});

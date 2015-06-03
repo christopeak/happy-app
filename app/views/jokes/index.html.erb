@@ -15,9 +15,6 @@
     <% @jokes.each do |joke| %>
       <tr>
         <td><%= link_to joke.setup, edit_joke_path(joke) %></td>
-        <!--<td><%= joke.punchline %></td>-->
-        <!--<td><%= link_to 'Show', joke %></td>-->
-        <!--<td><%= link_to 'Edit', edit_joke_path(joke) %></td>-->
         <td><%= link_to 'Delete', joke, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
